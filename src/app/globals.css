@@ -1,8 +1,8 @@
 /* Title */
     @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
     /* font-family: 'Arvo', serif; */
-    @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
-    /* font-family: 'Fugaz One', cursive; */
+    @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap');
+    /* font-family: 'Sofia Sans Semi Condensed', sans-serif; */
     @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
     /* font-family: 'Merriweather', serif; */
 /* Main */
@@ -35,9 +35,13 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
+.title-1 {
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Arvo', serif;
-    font-weight: 600;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
 }
 
 a {
@@ -49,6 +53,22 @@ a {
 a:hover {
     color: var(--primary);
     text-decoration: underline;
+}
+
+.font-detail {
+    font-family: 'Courgette', cursive;
+}
+
+.image-container {
+    width: 100%;
+    position: relative !important;
+}
+
+.image-container .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
 }
 
 .btn-primary {
@@ -85,4 +105,12 @@ a:hover {
     background: var(--primary);
     color: white;
     text-decoration: none;
+}
+
+.swiper-button-prev {
+    color: white !important;
+}
+
+.swiper-button-next {
+    color: white !important;
 }
