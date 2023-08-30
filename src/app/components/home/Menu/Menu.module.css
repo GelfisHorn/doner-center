@@ -1,0 +1,25 @@
+.card {
+    display: block;
+    height: 100%;
+}
+
+.card img {
+    opacity: 85%;
+}
+
+.card:hover img {
+    opacity: 40%;
+}
+
+.text {
+    visibility: hidden;
+    opacity: 0;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.card:hover .text {
+    visibility: visible;
+    opacity: 1;
+}
