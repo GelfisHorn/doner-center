@@ -23,3 +23,13 @@
     visibility: visible;
     opacity: 1;
 }
+
+@media (max-width: 1280px) {
+    .card img {
+        opacity: 40%;
+    }
+    .text {
+        visibility: visible;
+        opacity: 1;
+    }
+}
