@@ -48,10 +48,10 @@ export default function BookTable() {
     return (
         <div className={"flex justify-center py-28"}>
             <div className={"flex flex-col gap-16"}>
-                <h2 className={"text-4xl text-center"}>Book a Table</h2>
+                <h2 className={"text-4xl text-center"}>Einen Tisch reservieren</h2>
                 <form onSubmit={handleSubmit} className={"grid grid-cols-2 gap-5 w-[35rem]"}>
                     <div>
-                        <label className={"block"} htmlFor="name">Nombre</label>
+                        <label className={"block"} htmlFor="name">Name</label>
                         <input className={"py-2 px-3 border outline-none w-full"} type="text" id="name" placeholder={"Schreib deinen Namen"} value={name} onChange={e => setName(e.target.value)} />
                     </div>
                     <div>
@@ -59,11 +59,11 @@ export default function BookTable() {
                         <input className={"py-2 px-3 border outline-none w-full"} type="text" id="email" placeholder={"Schreiben Sie Ihre E-Mail"} value={email} onChange={e => setEmail(e.target.value)} />
                     </div>
                     <div>
-                        <label className={"block"} htmlFor="date">Fecha</label>
+                        <label className={"block"} htmlFor="date">Datum</label>
                         <input className={"py-2 px-3 border outline-none w-full"} type="date" id="date" value={date} onChange={e => setDate(e.target.value)} />
                     </div>
                     <div>
-                        <label className={"block"} htmlFor="hour">Hora</label>
+                        <label className={"block"} htmlFor="hour">Stunde</label>
                         <input className={"py-2 px-3 border outline-none w-full"} type="time" id="hour" step={"3600"} value={hour} onChange={e => setHour(e.target.value)} />
                     </div>
                     <div className={"col-start-1 col-end-3"}>
