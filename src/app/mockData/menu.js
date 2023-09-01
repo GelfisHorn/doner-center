@@ -301,27 +301,27 @@ const beverages = {
     description: "Erfrische dein Erlebnis mit einzigartigen Schlucken",
     menu: [
         {
-            name: "Cola, Fanta, Sprite (0,33)",
+            name: "Cola, Fanta, Sprite (0,33L)",
             price: 2.5
         },
         {
-            name: "Fanta Exotic, Uludağ (0,33)",
+            name: "Fanta Exotic, Uludağ (0,33L)",
             price: 2.5
         },
         {
-            name: "Cola, Fanta, Sprite (1)",
+            name: "Cola, Fanta, Sprite (1L)",
             price: 3.0
         },
         {
-            name: "Mineralwasser (0,5)",
+            name: "Mineralwasser (0,5L)",
             price: 1.5
         },
         {
-            name: "Diverse Säfte (0,33)",
+            name: "Diverse Säfte (0,33L)",
             price: 2.0
         },
         {
-            name: "Ayran (0,25)",
+            name: "Ayran (0,25L)",
             ingredients: "mit Kohlensäure farbstoffhaltig, mit Süßungsmitteln, mit Antioxidationsmitteln",
             price: 1.5
         }

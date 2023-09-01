@@ -10,7 +10,7 @@ export default function Layout({ title, children, metaDesc }) {
     return (
         <>
             <Head>
-                <title>{title} | Döner Center</title>
+                <title>{title} | Döner Center Mieste</title>
                 <meta name="description" content={metaDesc || ""} />
                 <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css" />
                 <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css" />

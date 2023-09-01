@@ -170,7 +170,7 @@ export default function contact() {
             <td style="overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:arial,helvetica,sans-serif;" align="left">
                 
         <div style="font-size: 14px; line-height: 140%; text-align: left; word-wrap: break-word;">
-            <p style="line-height: 140%;">Vielen Dank für Ihre Tischreservierung im Döner Center, wir freuen uns, Sie begrüßen zu dürfen.</p>
+            <p style="line-height: 140%;">Vielen Dank für Ihre Tischreservierung im Döner Center Mieste, wir freuen uns, Sie begrüßen zu dürfen.</p>
         </div>
 
             </td>

@@ -88,7 +88,7 @@ export default function Menu() {
                             href={"beverages"}
                             text={"Getränke"}
                             description={"Erfrische dein Erlebnis mit einzigartigen Schlucken."}
-                            image={"/menu/6.webp"}
+                            image={"/menu/6-1.webp?v=1"}
                             alt={"Restaurant menu image"} />
                     </SwiperSlide>
                 </Swiper>

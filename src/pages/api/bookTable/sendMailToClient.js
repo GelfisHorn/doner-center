@@ -24,7 +24,7 @@ export default async function handler(req, res) {
             from: `"Döner Center Mieste" ${process.env.MAILING_EMAIL}>`,
             to: email,
             subject: `Wir haben Ihre Reservierung erhalten`,
-            text: `Vielen Dank für Ihre Tischreservierung im Döner Center, wir freuen uns, Sie begrüßen zu dürfen.`,
+            text: `Vielen Dank für Ihre Tischreservierung im Döner Center Mieste, wir freuen uns, Sie begrüßen zu dürfen.`,
             html: template()
         });
 

@@ -46,7 +46,7 @@ export default function BookTable() {
     }
     
     return (
-        <div className={"flex justify-center py-28 px-6 sm:px-10"}>
+        <section className={"flex justify-center py-28 px-6 sm:px-10"} id={"booktable"}>
             <div className={"flex flex-col gap-16"}>
                 <h2 className={"text-4xl text-center"}>Einen Tisch reservieren</h2>
                 <form onSubmit={handleSubmit} className={"grid grid-cols-1 sm:grid-cols-2 gap-5 sm:w-[35rem]"}>
@@ -84,6 +84,6 @@ export default function BookTable() {
                     <button type={"submit"} className={"py-2 btn-primary hover:text-primary sm:col-start-1 sm:col-end-3"}>Einen Tisch reservieren</button>
                 </form>
             </div>
-        </div>
+        </section>
     )
 }

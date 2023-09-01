@@ -19,7 +19,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Startseite | Döner Center</title>
+                <title>Startseite | Döner Center Mieste</title>
                 <meta name="description" content={""} />
                 <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css" />
                 <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css" />

@@ -18,7 +18,7 @@ const center = {
 const markers = [
     {
         id: 1,
-        name: "Döner Center",
+        name: "Döner Center Mieste",
         position: { lat: 50.443185, lng: 10.440979 }
     }
 ]
@@ -26,7 +26,7 @@ const markers = [
 export default function MapSection() {
 
     return (
-        <div className={"w-full"}>
+        <section className={"w-full"}>
             <div className={"flex flex-col gap-8 text-center py-28 px-6 sm:px-10"}>
                 <div className={"flex flex-col gap-5"}>
                     <div className={"font-detail text-xl text-primary"}>Standort</div>
@@ -43,7 +43,7 @@ export default function MapSection() {
                 </div>
             </div>
             <Map />
-        </div>
+        </section>
     )
 }
 

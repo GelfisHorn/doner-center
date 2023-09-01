@@ -5,7 +5,7 @@ import styles from './Index.module.css'
 
 export default function Hero() {
     return (
-        <div className={`flex items-center text-white text-center min-h-[750px] h-screen`} /* style={{height: 'calc(100vh - 6rem)'}} */>
+        <section className={`flex items-center text-white text-center min-h-[750px] h-screen`} /* style={{height: 'calc(100vh - 6rem)'}} */>
             <div className={"relative flex flex-col gap-12 w-full xl:w-2/3 mx-auto px-6 sm:px-10 lg:px-20 xl:pl-20 pt-24"} style={{ zIndex: 1 }}>
                 <div className={"flex flex-col gap-7"}>
                     <div className={"font-detail text-xl md:text-2xl"}>Unerwiderstehliche Köstlichkeiten</div>
@@ -22,6 +22,6 @@ export default function Hero() {
                     </Link>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
