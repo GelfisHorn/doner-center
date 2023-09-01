@@ -46,10 +46,10 @@ export default function BookTable() {
     }
     
     return (
-        <div className={"flex justify-center py-28"}>
+        <div className={"flex justify-center py-28 px-6 sm:px-10"}>
             <div className={"flex flex-col gap-16"}>
                 <h2 className={"text-4xl text-center"}>Einen Tisch reservieren</h2>
-                <form onSubmit={handleSubmit} className={"grid grid-cols-2 gap-5 w-[35rem]"}>
+                <form onSubmit={handleSubmit} className={"grid grid-cols-1 sm:grid-cols-2 gap-5 sm:w-[35rem]"}>
                     <div>
                         <label className={"block"} htmlFor="name">Name</label>
                         <input className={"py-2 px-3 border outline-none w-full"} type="text" id="name" placeholder={"Schreib deinen Namen"} value={name} onChange={e => setName(e.target.value)} />
@@ -66,7 +66,7 @@ export default function BookTable() {
                         <label className={"block"} htmlFor="hour">Stunde</label>
                         <input className={"py-2 px-3 border outline-none w-full"} type="time" id="hour" step={"3600"} value={hour} onChange={e => setHour(e.target.value)} />
                     </div>
-                    <div className={"col-start-1 col-end-3"}>
+                    <div className={"sm:col-start-1 sm:col-end-3"}>
                         <label className={"block"} htmlFor="persons">Anzahl der Personen</label>
                         <select id="persons" className={"py-2 px-3 border outline-none w-full"} value={persons} onChange={e => setPersons(e.target.value)}>
                             <option value="1">1 Person</option>
@@ -81,7 +81,7 @@ export default function BookTable() {
                             <option value="10">10 Personen</option>
                         </select>
                     </div>
-                    <button type={"submit"} className={"py-2 btn-primary hover:text-primary col-start-1 col-end-3"}>Einen Tisch reservieren</button>
+                    <button type={"submit"} className={"py-2 btn-primary hover:text-primary sm:col-start-1 sm:col-end-3"}>Einen Tisch reservieren</button>
                 </form>
             </div>
         </div>
