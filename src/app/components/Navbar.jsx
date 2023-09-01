@@ -1,22 +1,27 @@
-"use client"
 
 // Nextjs
 import Image from "next/image"
 import Link from "next/link"
+import { useRouter } from "next/router"
 
 export default function Navbar() {
+
+    const router = useRouter();
+
+    const path = router.pathname;
+
     return (
-        <header className={`fixed top-0 left-0 w-full bg-white flex items-center justify-between h-24 px-6 sm:px-10 lg:px-20 border-b`} style={{zIndex: "10", borderColor: "rgba(0, 0, 0, .1)"}}>
+        <header className={`fixed top-0 left-0 w-full bg-white flex items-center justify-between h-24 px-6 sm:px-10 lg:px-20 border-b`} style={{zIndex: "10", borderColor: "rgba(0, 0, 0, .2)"}}>
             <div className={"flex items-center gap-8"}>
                 <Link href={"/"} className={"hover:no-underline"}>
                     <Image src={"/logo/128.webp"} width={"70"} height={"70"} alt={"Döner Center Mieste"} />
                 </Link>
             </div>
-            <div className={"hidden md:block"}>
-                <ul className={`flex items-end gap-5 text-lg font-medium`}>
-                    <li className={""}><Link href={"/"} className={"hover:no-underline"}>Startseite</Link></li>
-                    <li className={""}><Link href={"/#menu"} className={"hover:no-underline"}>Menu</Link></li>
-                    <li className={""}><Link href={"/#booktable"} className={"hover:no-underline"}>Reservieren</Link></li>
+            <div className={"hidden md:flex items-center h-full"}>
+                <ul className={`flex items-center gap-5 text-lg font-medium h-full`}>
+                    <li className={`flex items-center h-full border-b-[3px] ${path == "/" ? "border-primary text-primary" : "border-transparent"} pt-2`}><Link href={"/"} className={"hover:no-underline"}>Startseite</Link></li>
+                    <li className={`flex items-center h-full border-b-[3px] border-transparent pt-2`}><Link href={"/#menu"} className={"hover:no-underline"}>Menu</Link></li>
+                    <li className={`flex items-center h-full border-b-[3px] border-transparent pt-2`}><Link href={"/#booktable"} className={"hover:no-underline"}>Reservieren</Link></li>
                 </ul>
             </div>
             <div>
