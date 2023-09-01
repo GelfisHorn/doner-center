@@ -5,8 +5,15 @@ import { formatMoney } from "@/app/helpers/formatMoney";
 export default function MenuItem({ name, ingredients, price, priceSmall, priceBig }) {
     return (
         <div className={"py-5 px-6 sm:px-10"}>
-            <div className={"flex items-end justify-between gap-3 text-lg w-full"}>
-                <div className={"font-semibold"}>{name}</div>
+            <div className={"flex items-start justify-between gap-3 text-lg w-full"}>
+                <div>
+                    <div className={"font-semibold"}>{name}</div>
+                    {ingredients ? (
+                        <div className={"text-sm"}>
+                            {ingredients}
+                        </div>
+                    ) : null}
+                </div>
                 <div className={"text-primary2 font-semibold"}>
                     {price ? (<div>{formatMoney(price)}</div>) : null}
                     <div className={"flex items-center gap-4"}>
@@ -21,11 +28,6 @@ export default function MenuItem({ name, ingredients, price, priceSmall, priceBi
                     </div>
                 </div>
             </div>
-            {ingredients ? (
-                <div className={"text-sm"}>
-                    {ingredients}
-                </div>
-            ) : null}
         </div>
     )
 }
