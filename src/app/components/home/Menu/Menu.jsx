@@ -80,7 +80,7 @@ export default function Menu() {
                             href={"baked"}
                             text={"Überbackenes"}
                             description={"Frisch gebackene hausgemachte Köstlichkeiten."}
-                            image={"/menu/5.webp"}
+                            image={"/menu/5-1.webp"}
                             alt={"Restaurant menu image"} />
                     </SwiperSlide>
                     <SwiperSlide>
