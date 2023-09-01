@@ -13,15 +13,15 @@ const containerStyle = {
 };
 
 const center = {
-    lat: 50.443185,
-    lng: 10.440979
+    lat: 52.4785153,
+    lng: 11.20563
 };
 
 const markers = [
     {
         id: 1,
         name: "Döner Center Mieste",
-        position: { lat: 50.443185, lng: 10.440979 }
+        position: { lat: 52.4785153, lng: 11.20563 }
     }
 ]
 
