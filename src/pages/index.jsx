@@ -11,6 +11,9 @@ import Footer from "@/app/components/Footer";
 import styles from './index.module.css'
 import Menu from "@/app/components/home/Menu/Menu";
 import Map from "@/app/components/home/Map/Map";
+import BookTable from "@/app/components/home/BookTable/BookTable";
+// Notifications
+import { Toaster } from "react-hot-toast";
 
 export default function Home() {
     return (
@@ -31,7 +34,9 @@ export default function Home() {
                 <Introduction />
                 <Menu />
                 <Map />
+                <BookTable />
                 <Footer />
+                <Toaster position={"top-right"} />
             </div>
         </>
     )

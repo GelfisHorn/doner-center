@@ -35,7 +35,7 @@ export default function MapSection() {
                     <p className={"md:w-1/2 mx-auto text-neutral-600"}>Finde unser Restaurant und genieße eine Vielzahl von Geschmacksrichtungen an einem Ort. Unsere Karte wird dich zu uns führen, wo du köstliche Optionen genießen kannst.</p>
                 </div>
                 <div className={"flex flex-col gap-5 text-lg"}>
-                    <div className={"font-detail text-xl text-primary"}>Zeitpläne</div>
+                    <div className={"font-detail text-xl text-primary"}>Öffnungszeiten</div>
                     <div className={"flex flex-col"}>
                         <div><span className={"font-semibold"}>Montag-Samstag</span> 10:00 - 21:00 Uhr</div>
                         <div><span className={"font-semibold"}>Sonntag</span> 11:00 - 21:00 Uhr</div>
