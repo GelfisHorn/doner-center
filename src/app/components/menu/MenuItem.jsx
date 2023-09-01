@@ -1,10 +1,16 @@
 
 // Helpers
 import { formatMoney } from "@/app/helpers/formatMoney";
+// Animations
+import { motion } from "framer-motion";
 
 export default function MenuItem({ name, ingredients, price, priceSmall, priceBig }) {
     return (
-        <div className={"py-5 px-6 sm:px-10"}>
+        <motion.div 
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            className={"py-5 px-6 sm:px-10"}
+        >
             <div className={"flex items-start justify-between gap-3 text-lg w-full"}>
                 <div>
                     <div className={"font-semibold"}>{name}</div>
@@ -28,6 +34,6 @@ export default function MenuItem({ name, ingredients, price, priceSmall, priceBi
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }

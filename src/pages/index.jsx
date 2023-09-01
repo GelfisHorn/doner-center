@@ -25,8 +25,9 @@ export default function Home() {
                 <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css" />
                 <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css" />
                 <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css" />
+                <link rel="shortcut icon" type="image/png" href="/logo.png" />
             </Head>
-            <div>
+            <div className={"overflow-x-hidden"}>
                 <div className={`${styles.backgroundImage}`}>
                     <Navbar absolute={true} color={"text-[#fff]"} />
                     <Hero />

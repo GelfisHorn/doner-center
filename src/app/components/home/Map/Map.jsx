@@ -4,6 +4,8 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 // Google maps
 import { GoogleMap, useJsApiLoader, Marker, InfoWindow } from '@react-google-maps/api';
+// Animations
+import { motion } from "framer-motion";
 
 const containerStyle = {
     width: '100%',
@@ -27,7 +29,11 @@ export default function MapSection() {
 
     return (
         <section className={"w-full"}>
-            <div className={"flex flex-col gap-8 text-center py-28 px-6 sm:px-10"}>
+            <motion.div 
+                initial={{ x: 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                className={"flex flex-col gap-8 text-center py-28 px-6 sm:px-10"}
+            >
                 <div className={"flex flex-col gap-5"}>
                     <div className={"font-detail text-xl text-primary"}>Standort</div>
                     <h2 className={"text-4xl"}>Erkunde unseren Standort</h2>
@@ -41,7 +47,7 @@ export default function MapSection() {
                         <div><span className={"font-semibold"}>Sonntag</span> 11:00 - 21:00 Uhr</div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
             <Map />
         </section>
     )

@@ -8,6 +8,8 @@ import Link from 'next/link';
 import MenuItem from './MenuItem';
 // Menu Data
 import menuData from '@/app/mockData/menu';
+// Animations
+import { motion } from "framer-motion";
 
 export default function Menu({ id }) {
 
@@ -30,11 +32,15 @@ export default function Menu({ id }) {
         Object.keys(menu).length != 0 ? (
             <div className={"flex flex-col gap-16 py-28 lg:w-[60rem] mx-auto"}>
                 <Link href={"/#menu"} className={"underline text-primary ml-6 w-fit"}><i class="fa-regular fa-arrow-left-long"></i> Geh zurück</Link>
-                <div className={"flex flex-col items-center gap-3 px-6 text-center"}>
+                <motion.div 
+                    initial={{ x: 100, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    className={"flex flex-col items-center gap-3 px-6 text-center"}
+                >
                     <h1 className={"text-4xl"}>{menu?.title}</h1>
                     <div className={"h-[2px] w-32 bg-primary"}></div>
                     <div>{menu?.description}</div>
-                </div>
+                </motion.div>
                 <div className={"grid grid-cols-1 lg:grid-cols-2 gap-x-24 divide-y lg:divide-none"}>
                     {menu.menu.map((item, index) => (
                         <MenuItem

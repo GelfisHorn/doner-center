@@ -1,6 +1,7 @@
 
 // Nextjs
 import Image from 'next/image';
+import Link from 'next/link';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import Swiper core and required modules
@@ -10,7 +11,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 // Styles
 import styles from './Menu.module.css'
-import Link from 'next/link';
+// Animations
+import { motion } from 'framer-motion';
 
 export default function Menu() {
     return (
@@ -18,11 +20,19 @@ export default function Menu() {
             <div className={"flex flex-col gap-14"}>
                 <div className={"flex items-center gap-5 pt-20"}>
                     <div className={"h-[2px] w-full bg-[#e4cb2641]"}></div>
-                    <div className={"text-primary text-[2.6rem]"}><i className="fa-sharp fa-light fa-hat-chef"></i></div>
+                    <motion.div 
+                        initial={{ y: -100 }}
+                        whileInView={{ y: 0 }}
+                        className={"text-primary text-[2.6rem]"}
+                    ><i className="fa-sharp fa-light fa-hat-chef"></i></motion.div>
                     <div className={"h-[2px] w-full bg-[#e4cb2641]"}></div>
                 </div>
                 <div className={"flex flex-col items-center gap-3"}>
-                    <div className={"uppercase text-3xl font-light tracking-widest"}>Speisekarte</div>
+                    <motion.div 
+                        initial={{ x: 100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        className={"uppercase text-3xl font-light tracking-widest"}
+                    >Speisekarte</motion.div>
                     <div className={"h-[2px] w-8 bg-primary"}></div>
                 </div>
             </div>

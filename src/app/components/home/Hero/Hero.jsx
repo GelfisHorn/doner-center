@@ -1,12 +1,20 @@
 
+// Nextjs
+import Link from 'next/link';
 // Styles
-import Link from 'next/link'
-import styles from './Index.module.css'
+import styles from './Index.module.css';
+// Animations
+import { motion } from 'framer-motion';
 
 export default function Hero() {
     return (
         <section className={`flex items-center text-white text-center min-h-[750px] h-screen`} /* style={{height: 'calc(100vh - 6rem)'}} */>
-            <div className={"relative flex flex-col gap-12 w-full xl:w-2/3 mx-auto px-6 sm:px-10 lg:px-20 xl:pl-20 pt-24"} style={{ zIndex: 1 }}>
+            <motion.div 
+                initial={{ x: 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                className={"relative flex flex-col gap-12 w-full xl:w-2/3 mx-auto px-6 sm:px-10 lg:px-20 xl:pl-20 pt-24"} 
+                style={{ zIndex: 1 }}
+            >
                 <div className={"flex flex-col gap-7"}>
                     <div className={"font-detail text-xl md:text-2xl"}>Unerwiderstehliche Köstlichkeiten</div>
                     <div className={"flex flex-col gap-2 title-1"}>
@@ -21,7 +29,7 @@ export default function Hero() {
                         <i className="fa-regular fa-arrow-down"></i>
                     </Link>
                 </div>
-            </div>
+            </motion.div>
         </section>
     )
 }

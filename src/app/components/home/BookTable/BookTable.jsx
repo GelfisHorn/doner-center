@@ -5,6 +5,8 @@ import { useState } from "react";
 import { toast } from "react-hot-toast";
 // Date formatter
 import moment from "moment/moment";
+// Animations
+import { motion } from "framer-motion";
 
 export default function BookTable() {
 
@@ -48,7 +50,11 @@ export default function BookTable() {
     return (
         <section className={"flex justify-center py-28 px-6 sm:px-10"} id={"booktable"}>
             <div className={"flex flex-col gap-16"}>
-                <h2 className={"text-4xl text-center"}>Einen Tisch reservieren</h2>
+                <motion.h2 
+                    initial={{ x: 100, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    className={"text-4xl text-center"}
+                >Einen Tisch reservieren</motion.h2>
                 <form onSubmit={handleSubmit} className={"grid grid-cols-1 sm:grid-cols-2 gap-5 sm:w-[35rem]"}>
                     <div>
                         <label className={"block"} htmlFor="name">Name</label>
