@@ -10,6 +10,7 @@ import Footer from "@/app/components/Footer";
 // Styles
 import styles from './index.module.css'
 import Menu from "@/app/components/home/Menu/Menu";
+import Map from "@/app/components/home/Map/Map";
 
 export default function Home() {
     return (
@@ -29,6 +30,7 @@ export default function Home() {
                 </div>
                 <Introduction />
                 <Menu />
+                <Map />
                 <Footer />
             </div>
         </>
