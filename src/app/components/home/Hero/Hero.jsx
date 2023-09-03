@@ -18,9 +18,9 @@ export default function Hero() {
                 <div className={"flex flex-col gap-7"}>
                     <div className={"font-detail text-xl md:text-2xl"}>Unerwiderstehliche Köstlichkeiten</div>
                     <div className={"flex flex-col gap-2 title-1"}>
-                        <div className={"text-4xl md:text-5xl lg:text-6xl font-[1000]"}><span className={"text-primary"}>Authentische Aromen</span> in jedem Bissen</div>
+                        <div className={"text-4xl md:text-5xl lg:text-6xl font-[1000]"}><span className={"text-primary"}>Döner Center Mieste</span> - Die besten Döner in Mieste!</div>
                     </div>
-                    <p className={"text-neutral-300 font-semibold"}>Entdecken Sie eine Welt voller Geschmack in jedem Bissen. Von außergewöhnlichen Pizzen bis hin zu unvergesslichen Shawarmas entführt Sie GeschmacksFreuden auf eine kulinarische Reise, die Sie nie vergessen werden.</p>
+                    <p className={"text-neutral-300 font-semibold"}>Pizza, Drehspieß und mehr: Entdecken Sie unsere unvergleichlichen Döner beim Döner Center Mieste!</p>
                 </div>
                 <div className={"flex flex-col lg:flex-row items-center justify-center gap-3 lg:gap-5"}>
                     <Link href={"/#booktable"} className={"flex items-center btn-primary h-12"}>Einen Tisch reservieren</Link>

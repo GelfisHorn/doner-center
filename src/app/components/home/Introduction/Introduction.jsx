@@ -17,12 +17,11 @@ export default function Introduction() {
             >
                 <div
                     className={"font-detail text-primary text-xl"}
-                >Hallo liebe Geste</div>
+                >Hallo liebe Gäste!</div>
                 <h3 className={"text-3xl"}>Willkommen im Döner Center <span className={"text-primary"}>Mieste</span></h3>
                 <i className={"fa-light fa-pizza text-primary text-xl"}></i>
                 <p className={"text-neutral-600"}>
-                    Willkommen zu einem einzigartigen kulinarischen Erlebnis! Auf unserer Website laden wir Sie ein, eine Auswahl unwiderstehlicher Aromen zu entdecken, die Ihren Gaumen erobern und Ihren Appetit anregen. 
-                    Von wohltuenden Optionen bis hin zu aufregenden Alternativen ist unsere Website Ihr Ziel, um Ihr Verlangen zu stillen.
+                    Bei Döner Center Mieste finden Sie zweifellos die besten Döner in der Stadt! Unsere leckeren Dönergerichte sind ein wahrer Genuss und eine Hommage an die hohe Qualität, die wir stets anstreben. Besuchen Sie uns und überzeugen Sie sich selbst von unserem unübertroffenen Döner-Erlebnis!
                 </p>
             </motion.div>
             <div className={`flex items-center gap-5`}>
