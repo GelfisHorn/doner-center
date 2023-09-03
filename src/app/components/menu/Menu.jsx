@@ -31,7 +31,7 @@ export default function Menu({ id }) {
     return (
         Object.keys(menu).length != 0 ? (
             <div className={"flex flex-col gap-16 py-28 lg:w-[60rem] mx-auto"}>
-                <Link href={"/#menu"} className={"underline text-primary ml-6 w-fit"}><i class="fa-regular fa-arrow-left-long"></i> Geh zurück</Link>
+                <Link href={"/#menu"} className={"underline text-primary ml-6 w-fit"}><i class="fa-regular fa-arrow-left-long"></i> zurück</Link>
                 <motion.div 
                     initial={{ x: 100, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
