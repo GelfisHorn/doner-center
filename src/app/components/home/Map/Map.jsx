@@ -48,7 +48,10 @@ export default function MapSection() {
                     </div>
                 </div>
             </motion.div>
-            <Map />
+            <div className={"flex flex-col gap-2"}>
+                <div className={"px-6 text-center text-lg"}><span className={"font-semibold"}>Adresse</span>: Riesebergstraße 49 39649 Mieste</div>
+                <Map />
+            </div>
         </section>
     )
 }
