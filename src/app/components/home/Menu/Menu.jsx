@@ -66,7 +66,7 @@ export default function Menu() {
                             href={"rotisserie"}
                             text={"Drehspieß"}
                             description={"Saftigkeit auf jedem Grillbissen."}
-                            image={"/menu/2.webp"}
+                            image={"/menu/2-1.webp"}
                             alt={"Restaurant menu image"} />
                     </SwiperSlide>
                     <SwiperSlide>
