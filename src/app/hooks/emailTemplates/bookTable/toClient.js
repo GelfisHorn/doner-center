@@ -120,8 +120,8 @@ export default function contact() {
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
             <td style="padding-right: 0px;padding-left: 0px;" align="left">
-            <a href="https://url.com" target="_blank">
-            <img align="left" border="0" src="images/image-1.png" alt="" title="" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 30%;max-width: 144px;" width="144"/>
+            <a href="https://doener-center-mieste.de" target="_blank">
+            <img align="left" border="0" src="https://doener-center-mieste.de/logo/128.webp" alt="" title="" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 20%;max-width: 144px;" width="144"/>
             </a>
             </td>
         </tr>
