@@ -11,7 +11,7 @@ export default function Impressum() {
                         <Item name={"Inhaber"} value={"-"} />
                         <Item name={"Adresse"} value={"Riesebergstraße 49 39649 Mieste"} />
                         <Item name={"Postleitzahl und Stadt"} value={"39649, Mieste"} />
-                        <Item name={"Telefon"} value={"0390 829 33 314"} />
+                        <Item name={"Telefon"} value={"039082931673"} />
                         <Item name={"E-Mail"} value={"-"} />
                     </Section>
                     <Section title={"Handels-und Rechtsregistrierung"}>
