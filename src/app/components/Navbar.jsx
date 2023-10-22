@@ -26,7 +26,7 @@ export default function Navbar() {
             </div>
             <div>
                 <Link 
-                    href={"tel:+039082933314"} 
+                    href={"tel:+0390 82931673"} 
                     className={"rounded-md px-3 py-2 bg-primary hover:bg-transparent border-2 border-transparent hover:border-primary text-white hover:text-primary hover:no-underline flex items-center gap-2"}
                 >
                     <i className="fa-solid fa-phone"></i>
